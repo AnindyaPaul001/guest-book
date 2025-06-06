@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guest Book</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Guest Book</h1>
+    <form action="/submit" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required /><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+    <hr>
+    <h2>Messages</h2>
+    <!-- Messages will be shown here via server injection -->
+  </div>
+</body>
+</html>
